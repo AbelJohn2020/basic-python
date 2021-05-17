@@ -1,6 +1,6 @@
 print("**** You can only change your money to dollars ****")
 options = """
-    Welcome to change home:
+    Welcome to "Casa de Cambio":
 
     1.- Nuevo sol.
     2.- Chilean pesos.
@@ -21,59 +21,67 @@ print(options)
 country_money = input().capitalize()
 
 if country_money == "Nuevo sol":
-    money = int(input("How much money do your want to change? "))
-    money = money/3.74
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 3.74
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars")
 
 elif country_money == "Chilean pesos":
-    money = int(input("How much money do your want to change? "))
-    money = money/712.38
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 712.38
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars") 
 
 elif country_money == "Mexican pesos":
-    money = int(input("How much money do your want to change? "))
-    money = money/20.32
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 20.32
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars") 
 
 elif country_money == "Uruguayan pesos":
-    money = int(input("How much money do your want to change? "))
-    money = money/44.88
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 44.88
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars")
 
 elif country_money == "Argentine pesos":
-    money = int(input("How much money do your want to change? "))
-    money = money/95.74
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 95.74
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars")  
 
 elif country_money == "Colombian pesos":
-    money = int(input("How much money do your want to change? "))
-    money = money/3789.1
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 3789.1
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars") 
 
 elif country_money == "Bolivian":
-    money = int(input("How much money do your want to change? "))
-    money = money/7.02
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 7.02
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars")
 
 elif country_money == "Brazilian real":
-    money = int(input("How much money do your want to change? "))
-    money = money/5.38
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 5.38
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars") 
 
 elif country_money == "Guarani":
-    money = int(input("How much money do your want to change? "))
-    money = money/6790.34
+    money = round(float(input("How much money do your want to change? ")), 2)
+    change = 6790.34
+    money = money/change
     money = round(money, 2)
     print("Your money is: ",money,"dollars") 
 
 else:
     print("Invalid option, try again")
-    
