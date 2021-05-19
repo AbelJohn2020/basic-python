@@ -1,5 +1,5 @@
 def palindrom(text):
-    text = text.replace(' ', '')
+    text = text.replace(' ', '') # replace() is for delete spaces
     text = text.lower()
     palindrom_text = text[::-1]
 
